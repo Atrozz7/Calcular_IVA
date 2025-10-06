@@ -21,7 +21,6 @@ public class iva implements WindowListener, ActionListener {
 	Button btnAgregarIva = new Button("Agregar IVA");
 	Button btnQuitarIva = new Button("Quitar IVA");
 	Button btnLimpiar = new Button("Limpiar");
-	//
 	
 
 	Dialog feedback = new Dialog(ventana, "Aviso", true);
