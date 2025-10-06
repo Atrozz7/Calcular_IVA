@@ -14,7 +14,7 @@ import java.awt.event.WindowListener;
 public class iva implements WindowListener, ActionListener {
 
 	Frame ventana = new Frame("Calcular IVA");
-	Label lblPrecioSinIva = new Label("Escriba aquí el precio sin IVA");
+	Label lblPrecioSinIva = new Label("Escriba aquí el precio");
 	TextField txtPrecioSinIva = new TextField(20);
 	Label lblIva = new Label("Escriba aquí el IVA que quiera aplicar (%)");
 	TextField txtIva = new TextField(20);
