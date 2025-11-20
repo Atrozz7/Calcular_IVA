@@ -83,8 +83,12 @@ public class iva implements WindowListener, ActionListener {
 			} else {
 
 				try {
-
-					double precioSinIva = Double.parseDouble(txtPrecioSinIva.getText());
+					
+					String precio = txtPrecioSinIva.getText();
+					precio = precio.replace(",", ".");
+					
+					double precioSinIva = Double.parseDouble(precio);
+					
 					double iva = Double.parseDouble(txtIva.getText());
 					double sumadeliva = (iva + 100) / 100; // Variable para que el IVA que haya agregado el usuario sea
 															// sumado a 100 para que el cálculo sea correcto, tras esto
@@ -117,6 +121,7 @@ public class iva implements WindowListener, ActionListener {
 			}
 		}
 	}
+
 
 	@Override
 	public void windowOpened(WindowEvent e) {
